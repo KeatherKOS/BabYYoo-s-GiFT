@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://i.postimg.cc/50rwbKPs/bence-balla-schottner-x68-Fax-Tyx90-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden; /* Ensure no scrolling */
+}
+
+.music-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+}
+
+.music-toggle label i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.music-on {
+    color: blue;
+}
+
+.music-off {
+    color: red;
+}
+
+.page {
+    display: none;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.page.active {
+    display: block;
+    opacity: 1;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Adjust width as needed */
+    height: auto;
+    border-radius: 20px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a modern effect */
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+}
+
+.next-button,
+.back-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: rgba(255, 105, 180, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff69b4;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover,
+.back-button:hover {
+    background-color: rgba(255, 105, 180, 1);
+}
+
+.animated-next {
+    animation: pulse 1s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
